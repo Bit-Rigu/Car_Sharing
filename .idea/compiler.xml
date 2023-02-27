@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="Car_Sharing.Car_Sharing-task-build-classes-java.main" target="11" />
+      <module name="Car_Sharing.Car_Sharing-task-build-generated-sources-annotationProcessor-java.main" target="11" />
+      <module name="Car_Sharing.Car_Sharing-task-build-generated-sources-headers-java.main" target="11" />
+      <module name="Car_Sharing.Car_Sharing-task-build-reports-tests.main" target="11" />
+      <module name="Car_Sharing.Car_Sharing-task-build-test-results.main" target="11" />
+      <module name="Car_Sharing.Car_Sharing-task-build-tmp.main" target="11" />
+      <module name="Car_Sharing.Car_Sharing-task.main" target="11" />
+      <module name="Car_Sharing.Topics-Anonymous_classes-An_anonymous_class_with_three_methods.main" target="11" />
+      <module name="Car_Sharing.Topics-Anonymous_classes-And_always_these_rules.main" target="11" />
+      <module name="Car_Sharing.Topics-Anonymous_classes-Capture_variables.main" target="11" />
+      <module name="Car_Sharing.Topics-Anonymous_classes-String_reverser.main" target="11" />
+      <module name="Car_Sharing.Topics-Anonymous_classes-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Anonymous_classes-What_about_context.main" target="11" />
+      <module name="Car_Sharing.Topics-Collectors-ASCII_Art.main" target="11" />
+      <module name="Car_Sharing.Topics-Collectors-Collectors_class.main" target="11" />
+      <module name="Car_Sharing.Topics-Collectors-Existing_collectors.main" target="11" />
+      <module name="Car_Sharing.Topics-Collectors-Set_average.main" target="11" />
+      <module name="Car_Sharing.Topics-Collectors-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Collectors-Сollect_parameter.main" target="11" />
+      <module name="Car_Sharing.Topics-Command-line_arguments-Basic_calculator.main" target="11" />
+      <module name="Car_Sharing.Topics-Command-line_arguments-Command_line_arguments.main" target="11" />
+      <module name="Car_Sharing.Topics-Command-line_arguments-Get_the_game_mode.main" target="11" />
+      <module name="Car_Sharing.Topics-Command-line_arguments-How_to_start_a_program.main" target="11" />
+      <module name="Car_Sharing.Topics-Command-line_arguments-Parameters_and_their_values.main" target="11" />
+      <module name="Car_Sharing.Topics-Command-line_arguments-The_index_of_an_argument.main" target="11" />
+      <module name="Car_Sharing.Topics-Command-line_arguments-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Comparator-Comparing_numbers.main" target="11" />
+      <module name="Car_Sharing.Topics-Comparator-Sort_users.main" target="11" />
+      <module name="Car_Sharing.Topics-Comparator-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Debugging_techniques-Assertion.main" target="11" />
+      <module name="Car_Sharing.Topics-Debugging_techniques-Find_the_error.main" target="11" />
+      <module name="Car_Sharing.Topics-Debugging_techniques-Log_events.main" target="11" />
+      <module name="Car_Sharing.Topics-Debugging_techniques-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Default_methods-Add_new_default_method.main" target="11" />
+      <module name="Car_Sharing.Topics-Default_methods-Diamond_problem.main" target="11" />
+      <module name="Car_Sharing.Topics-Default_methods-Implement_a_default_method.main" target="11" />
+      <module name="Car_Sharing.Topics-Default_methods-Resolve_a_diamond_problem.main" target="11" />
+      <module name="Car_Sharing.Topics-Default_methods-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Default_methods-What_is_a_result.main" target="11" />
+      <module name="Car_Sharing.Topics-Default_methods-What_is_the_reason_for_default_methods.main" target="11" />
+      <module name="Car_Sharing.Topics-Floating-point_types-Celsius_to_Fahrenheit.main" target="11" />
+      <module name="Car_Sharing.Topics-Floating-point_types-Determine_the_integer_part.main" target="11" />
+      <module name="Car_Sharing.Topics-Floating-point_types-Explain_the_result.main" target="11" />
+      <module name="Car_Sharing.Topics-Floating-point_types-Find_X.main" target="11" />
+      <module name="Car_Sharing.Topics-Floating-point_types-Liquid_pressure.main" target="11" />
+      <module name="Car_Sharing.Topics-Floating-point_types-Statements.main" target="11" />
+      <module name="Car_Sharing.Topics-Floating-point_types-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Functional_data_processing_with_streams-Finding_max_and_min_elements.main" target="11" />
+      <module name="Car_Sharing.Topics-Functional_data_processing_with_streams-Statements_about_stream_operations.main" target="11" />
+      <module name="Car_Sharing.Topics-Functional_data_processing_with_streams-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Arithmetic_expression.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Calculate_the_digit.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Desks.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Difference_of_times.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Reading_integer_numbers.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Reversing.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Snail.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Squirrels_and_nuts.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-The_sum_of_digits.main" target="11" />
+      <module name="Car_Sharing.Topics-Integer_types_and_operations-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Iterating_over_arrays-Check_if_an_array_is_sorted_ascending.main" target="11" />
+      <module name="Car_Sharing.Topics-Iterating_over_arrays-Count_how_many_times_a_number_occurs.main" target="11" />
+      <module name="Car_Sharing.Topics-Iterating_over_arrays-Cyclically_shifting_elements.main" target="11" />
+      <module name="Car_Sharing.Topics-Iterating_over_arrays-Does_an_array_contain_N.main" target="11" />
+      <module name="Car_Sharing.Topics-Iterating_over_arrays-Find_the_sum.main" target="11" />
+      <module name="Car_Sharing.Topics-Iterating_over_arrays-Right_Rotation.main" target="11" />
+      <module name="Car_Sharing.Topics-Iterating_over_arrays-The_sum_of_array_elements.main" target="11" />
+      <module name="Car_Sharing.Topics-Iterating_over_arrays-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Lambda_expressions-Creating_a_closure.main" target="11" />
+      <module name="Car_Sharing.Topics-Lambda_expressions-Expression_closure.main" target="11" />
+      <module name="Car_Sharing.Topics-Lambda_expressions-Expressions.main" target="11" />
+      <module name="Car_Sharing.Topics-Lambda_expressions-Max_of_two_integers.main" target="11" />
+      <module name="Car_Sharing.Topics-Lambda_expressions-Next_even_number.main" target="11" />
+      <module name="Car_Sharing.Topics-Lambda_expressions-Parts_of code.main" target="11" />
+      <module name="Car_Sharing.Topics-Lambda_expressions-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Optional-Check_an_Optional_value.main" target="11" />
+      <module name="Car_Sharing.Topics-Optional-Sum_up_optional_values.main" target="11" />
+      <module name="Car_Sharing.Topics-Optional-The_address_book.main" target="11" />
+      <module name="Car_Sharing.Topics-Optional-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Reduction_methods-Calculating_factorials.main" target="11" />
+      <module name="Car_Sharing.Topics-Reduction_methods-Range_quadratic_sum.main" target="11" />
+      <module name="Car_Sharing.Topics-Reduction_methods-Sum_of_divisors.main" target="11" />
+      <module name="Car_Sharing.Topics-Reduction_methods-Theory.main" target="11" />
+      <module name="Car_Sharing.Topics-Standard_functional_interfaces-Ternary_operator.main" target="11" />
+      <module name="Car_Sharing.Topics-Standard_functional_interfaces-Theory.main" target="11" />
+      <module name="Car_Sharing.util.main" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

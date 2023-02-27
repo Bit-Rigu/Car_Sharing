@@ -1,0 +1,30 @@
+# Project exclude paths
+/.gradle/
+/Car Sharing/task/build/
+/Car Sharing/task/out/
+/Car Sharing/task/out/production/classes/
+/Topics/Floating-point types/Theory/build/
+/Topics/Lambda expressions/Parts of code/out/
+/Topics/Lambda expressions/Parts of code/out/production/classes/
+/Topics/Lambda expressions/Theory/out/
+/Topics/Lambda expressions/Theory/out/production/classes/
+/Topics/Optional/Check an Optional value/out/
+/Topics/Optional/Check an Optional value/out/production/classes/
+/Topics/Optional/Sum up optional values/out/
+/Topics/Optional/Sum up optional values/out/production/classes/
+/Topics/Optional/The address book/out/
+/Topics/Optional/The address book/out/production/classes/
+/Topics/Optional/Theory/out/
+/Topics/Optional/Theory/out/production/classes/
+/Topics/Reduction methods/Calculating factorials/out/
+/Topics/Reduction methods/Calculating factorials/out/production/classes/
+/Topics/Reduction methods/Range quadratic sum/out/
+/Topics/Reduction methods/Range quadratic sum/out/production/classes/
+/Topics/Reduction methods/Sum of divisors/out/
+/Topics/Reduction methods/Sum of divisors/out/production/classes/
+/Topics/Reduction methods/Theory/out/
+/Topics/Reduction methods/Theory/out/production/classes/
+/Topics/Standard functional interfaces/Ternary operator/out/
+/Topics/Standard functional interfaces/Ternary operator/out/production/classes/
+/Topics/Standard functional interfaces/Theory/out/
+/Topics/Standard functional interfaces/Theory/out/production/classes/

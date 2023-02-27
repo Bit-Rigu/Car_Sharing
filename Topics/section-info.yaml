@@ -1,0 +1,15 @@
+content:
+- Floating-point types
+- Standard functional interfaces
+- Optional
+- Lambda expressions
+- Comparator
+- Iterating over arrays
+- Functional data processing with streams
+- Reduction methods
+- Collectors
+- Debugging techniques
+- Integer types and operations
+- Command-line arguments
+- Anonymous classes
+- Default methods

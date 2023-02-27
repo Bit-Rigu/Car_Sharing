@@ -1,0 +1,755 @@
+2022-11-16 02:46:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE   COMPANY (id INTEGER not NULL,  NAME VARCHAR(255)) [42101-200]
+2022-11-16 02:46:46 database: wrong user or password; user: ""
+org.h2.message.DbException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:19)
+	at CarSharingTest.test2_checkDatabaseConnection(CarSharingTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+2022-11-16 02:53:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE   COMPANY (id INTEGER not NULL,  NAME VARCHAR(255)) [42101-200]
+2022-11-16 02:53:09 database: wrong user or password; user: ""
+org.h2.message.DbException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:19)
+	at CarSharingTest.test2_checkDatabaseConnection(CarSharingTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+2022-11-16 02:56:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE   COMPANY (id INTEGER not NULL,  NAME VARCHAR(255)) [42101-200]
+2023-02-16 20:03:07 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE   COMPANY (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-16 20:03:07 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE   COMPANY (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-16 20:03:07 jdbc[9]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at DatabaseUtil.clearCompanyTable(DatabaseUtil.java:91)
+	at CarSharingTest.test6_testInsert(CarSharingTest.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 24 more
+2023-02-16 20:03:07 jdbc[9]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at DatabaseUtil.clearCompanyTable(DatabaseUtil.java:91)
+	at CarSharingTest.test6_testInsert(CarSharingTest.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 24 more
+2023-02-26 09:29:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-26 09:29:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-26 09:29:58 jdbc[5]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at CarSharingTest.test3_checkDatabaseConnection(CarSharingTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 23 more
+2023-02-26 09:31:45 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-26 09:31:45 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-26 09:31:45 jdbc[5]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at CarSharingTest.test3_checkDatabaseConnection(CarSharingTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 23 more
+2023-02-26 09:31:45 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-26 09:31:45 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-26 09:31:45 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-26 09:31:45 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-26 09:34:38 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-26 09:34:38 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-26 09:34:39 jdbc[5]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at CarSharingTest.test3_checkDatabaseConnection(CarSharingTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 23 more
+2023-02-26 09:34:39 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-26 09:34:39 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-26 09:34:39 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-26 09:34:39 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 12:58:28 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 12:58:28 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 12:58:28 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 12:58:29 jdbc[5]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at CarSharingTest.test3_checkDatabaseConnection(CarSharingTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 23 more
+2023-02-27 12:58:29 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 12:58:29 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 12:58:29 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 12:58:29 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 12:58:29 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 12:58:29 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 12:58:29 jdbc[11]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at carsharing.service.DatabaseConnection.<init>(DatabaseConnection.java:18)
+	at carsharing.controller.MainController.<init>(MainController.java:23)
+	at carsharing.Main.main(Main.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at DatabaseUtil.clearCarTable(DatabaseUtil.java:101)
+	at CarSharingTest.test7_testAddCar(CarSharingTest.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 24 more
+2023-02-27 12:58:29 jdbc[11]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at DatabaseUtil.clearCarTable(DatabaseUtil.java:101)
+	at CarSharingTest.test7_testAddCar(CarSharingTest.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 24 more
+2023-02-27 12:58:29 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 12:58:29 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 12:58:30 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 12:58:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 12:58:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 12:58:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 13:02:39 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 13:02:39 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 13:02:39 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 13:02:40 jdbc[5]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at CarSharingTest.test3_checkDatabaseConnection(CarSharingTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 23 more
+2023-02-27 13:02:40 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 13:02:40 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 13:02:40 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 13:02:40 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 13:02:40 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 13:02:40 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 13:02:40 jdbc[11]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at DatabaseUtil.clearCarTable(DatabaseUtil.java:101)
+	at CarSharingTest.test7_testAddCar(CarSharingTest.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 24 more
+2023-02-27 13:02:40 jdbc[11]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at carsharing.service.DatabaseConnection.<init>(DatabaseConnection.java:18)
+	at carsharing.controller.MainController.<init>(MainController.java:23)
+	at carsharing.Main.main(Main.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at DatabaseUtil.clearCarTable(DatabaseUtil.java:101)
+	at CarSharingTest.test7_testAddCar(CarSharingTest.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 24 more
+2023-02-27 13:02:40 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 13:02:40 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 13:02:40 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 13:02:41 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 13:02:41 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 13:02:41 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 13:02:41 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 13:02:41 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 13:02:41 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 18:48:13 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 18:48:13 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 18:48:13 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 18:48:13 jdbc[5]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at CarSharingTest.test3_checkDatabaseConnection(CarSharingTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 23 more
+2023-02-27 18:48:14 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 18:48:14 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 18:48:14 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 18:48:14 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 18:48:14 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 18:48:14 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 18:48:14 jdbc[11]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at DatabaseUtil.clearCarTable(DatabaseUtil.java:101)
+	at CarSharingTest.test7_testAddCar(CarSharingTest.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 24 more
+2023-02-27 18:48:14 jdbc[11]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at carsharing.service.DatabaseConnection.<init>(DatabaseConnection.java:18)
+	at carsharing.controller.MainController.<init>(MainController.java:25)
+	at carsharing.Main.main(Main.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:16)
+	at DatabaseUtil.clearCarTable(DatabaseUtil.java:101)
+	at CarSharingTest.test7_testAddCar(CarSharingTest.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 24 more
+2023-02-27 18:48:14 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 18:48:14 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 18:48:14 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 18:48:14 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 18:48:15 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 18:48:15 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
+2023-02-27 18:48:15 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE company (id INTEGER PRIMARY KEY AUTO_INCREMENT,  NAME VARCHAR(255) UNIQUE NOT NULL) [42101-200]
+2023-02-27 18:48:15 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" already exists; SQL statement:
+CREATE TABLE car(id INTEGER PRIMARY KEY AUTO_INCREMENT,name VARCHAR(200) UNIQUE NOT NULL,company_id INTEGER NOT NULL,CONSTRAINT fk_company FOREIGN KEY(company_id) REFERENCES company(id)) [42101-200]
+2023-02-27 18:48:15 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" already exists; SQL statement:
+CREATE TABLE customer (id INTEGER PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) UNIQUE NOT NULL,rented_car_id INTEGER DEFAULT NULL,CONSTRAINT fk_car FOREIGN KEY(rented_car_id) REFERENCES car(id)) [42101-200]
